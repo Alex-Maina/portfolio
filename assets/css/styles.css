@@ -250,6 +250,9 @@ img {
 
 
 /*==================== HOME ====================*/
+.home{
+  padding-bottom: 32px;
+}
 .home__container{
   gap: 1rem;
 }
@@ -344,7 +347,9 @@ img {
   align-items: center;
 }
 /*==================== ABOUT ====================*/
-
+.about{
+  padding-bottom: 32px;
+}
 .about__img{
   width: 200px;
   border-radius: .5rem;
@@ -384,6 +389,9 @@ img {
 }
 
 /*==================== SKILLS ====================*/
+.skills{
+  padding-bottom: 32px;
+}
 .skills__container{
   row-gap: 0;
 }
@@ -478,7 +486,19 @@ img {
   transform: rotate(-180deg)
 }
 /*==================== QUALIFICATION ====================*/
-
+.qualification{
+  padding: 32px;
+}
+.qualification__tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+.qualification__button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
 
 /*==================== SERVICES ====================*/
 
