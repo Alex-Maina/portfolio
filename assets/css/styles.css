@@ -497,9 +497,11 @@ img {
 .qualification__button{
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
+  opacity: 40%;
   cursor: pointer;
 }
 .qualification__button:hover{
+  opacity: 60%;
   color: var(--first-color);
 }
 .qualification__icon{
@@ -543,6 +545,10 @@ img {
 }
 .qualification__active[data-content]{
   display: block;
+}
+.qualification__button.qualification__active{
+  opacity: 100%;
+  color: var(--first-color);
 }
 
 /*==================== SERVICES ====================*/
