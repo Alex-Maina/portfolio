@@ -12,7 +12,7 @@
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-alt: hsl(var(--hue-color), 56%, 52%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
@@ -346,6 +346,19 @@ img {
   display: inline-flex;
   align-items: center;
 }
+
+.button-smaller{
+  padding: .75rem 1rem;
+}
+.button--link{
+  padding:0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+.button--link:hover{
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
 /*==================== ABOUT ====================*/
 .about{
   padding-bottom: 32px;
@@ -487,7 +500,7 @@ img {
 }
 /*==================== QUALIFICATION ====================*/
 .qualification{
-  padding: 32px;
+  padding-bottom: 32px;
 }
 .qualification__tabs{
   display: flex;
@@ -552,8 +565,56 @@ img {
 }
 
 /*==================== SERVICES ====================*/
-
-
+.services{
+  padding-bottom: 32px;
+}
+.services__container{
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.services__content{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 3.5rem .5rem 1.25rem 1.5rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0, .15);
+  transition: .3s;
+}
+.services__content:hover{
+  box-shadow: 0 5px 10px rgba(0,0,0, .15);
+}
+.services__icon{
+  display: block;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+.services__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--first-medium);
+}
+.services__button{
+  cursor: pointer;
+  font-size: var(--small-font-size);
+}
+.services__buttton:hover .button__icon{
+  transform: translateX(.25rem);
+}
+.services__modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  transition: .3s;
+}
 /* Active Modal */
 
 
