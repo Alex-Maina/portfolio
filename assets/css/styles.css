@@ -563,6 +563,14 @@ img {
   opacity: 100%;
   color: var(--first-color);
 }
+.qualification_institute{
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color-light);
+}
+.qualification_institute:hover{
+  color: var(--first-color);
+}
 
 /*==================== SERVICES ====================*/
 .services{
