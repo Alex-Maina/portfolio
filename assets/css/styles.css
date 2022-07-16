@@ -48,7 +48,7 @@
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
-    --mb-3: 3rem;
+    --mb-3: 2rem;
 
     /*========== z index ==========*/
     --z-tooltip: 10;
@@ -278,12 +278,15 @@ img {
 }
 
 .home__blob{
+  position: absolute;
+  right: 10%;
+  top: 3%;
   width:200px;
   fill: var(--first-color);
 }
 
 .home__blob-img{
-  width:170px;
+  width:200px;
 }
 .home__data{
   grid-column:1/3;
@@ -362,6 +365,9 @@ img {
 /*==================== ABOUT ====================*/
 .about{
   padding-bottom: 32px;
+}
+.intro-subtitle{
+margin-bottom: 30px;
 }
 .about__img{
   width: 200px;
@@ -682,6 +688,9 @@ img {
 .portfolio__description{
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-0-5);
+}
+.portfolio__demo:hover{
+  transform: translate(.25rem)
 }
 
 /*==================== PROJECT IN MIND ====================*/
