@@ -613,6 +613,8 @@ img {
   justify-content: center;
   padding: 0 1rem;
   z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
   transition: .3s;
 }
 .services__modal-content{
@@ -621,13 +623,13 @@ img {
   padding: 1.5rem;
   border-radius: .5rem;
 }
-.services__model-services{
+.services__modal-services{
   row-gap: 1rem;
 }
-.services__model-service{
-  display: inline-block;
+.services__modal-service{
+  display: flex;
 }
-.services__model-title{
+.services__modal-title{
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
@@ -645,7 +647,10 @@ img {
   margin-right: var(--mb-0-25);
 }
 /* Active Modal */
-
+.active-modal{
+  opacity: 100;
+  visibility: visible;
+}
 
 /*==================== PORTFOLIO ====================*/
 
