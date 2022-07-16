@@ -114,7 +114,7 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 2rem;
 }
 
 .section__title {
@@ -667,6 +667,10 @@ margin-bottom: 30px;
   visibility: visible;
 }
 /*==================== PORTFOLIO ====================*/
+.portfolio{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .portfolio__container{
   overflow: initial;
 }
@@ -694,18 +698,46 @@ margin-bottom: 30px;
   transform: translate(.25rem)
 }
 
-/*==================== PROJECT IN MIND ====================*/
-
-
-/*==================== TESTIMONIAL ====================*/
-
-
 /*==================== CONTACT ME ====================*/
-
-
+.project-message{
+  text-align: center;
+  padding: 0 10% 0 10%;
+}
+.contact__container{
+  row-gap: 3rem;
+}
+.contact__info{
+  display: flex;
+  margin-bottom: var(--mb-2);
+}
+.contact__icon{
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+.contact__title{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  color: rgba(0,0,0,.5);
+}
 /*==================== FOOTER ====================*/
-
-
+.footer{
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+  padding-bottom: .1rem;
+}
+.footer-title{
+  padding: 20px 0 20px 0;
+}
+.footer__social{
+  display: block;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+  padding-bottom: 30px;
+}
+.footer-icon{
+  margin-right: 20px;
+}
 /*========== SCROLL UP ==========*/
 
 
