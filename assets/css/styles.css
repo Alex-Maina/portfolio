@@ -267,6 +267,7 @@ img {
   display: grid;
   grid-template-columns: max-content;
   row-gap: 1rem;
+  margin-bottom: 20px;
 }
 
 .home__social-icon{
@@ -279,8 +280,8 @@ img {
 
 .home__blob{
   position: absolute;
-  right: 10%;
-  top: 3%;
+  right: 5%;
+  top: 5%;
   width:200px;
   fill: var(--first-color);
 }
