@@ -140,6 +140,8 @@
                             some art, or on the dancefloor enjoying social latin dances (salsa, bachata, merengue & Kizomba).
 
                         </p>
+                    </div>
+                        <div class="CTA-about">
                         <div class="about__info">
                             <div>
                                 <span class="about__info-title">04+</span>
@@ -160,6 +162,7 @@
                             </a>
                         </div>
                     </div>
+                    
                 </div>
             </section>
 
@@ -534,14 +537,14 @@
                      <div class="services__content">
                         <div>
                             <i class="uil uil-web-grid services__icon"></i>
-                            <h3 class="services__title">UI/UX Designer</h3>
+                            <h3 class="services__title">UI/UX Design</h3>
                         </div>
                         <span class="button button--flex button--small button--link services__button">
                             View More <i class="uil uil-arrow-right button__icon"></i>
                         </span>
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-title">UI/UX Designer</h4>
+                                <h4 class="services__modal-title">UI/UX Design</h4>
                                 <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="services__modal-services grid">
@@ -570,14 +573,14 @@
                      <div class="services__content">
                         <div>
                             <i class="uil uil-brackets-curly services__icon"></i>
-                            <h3 class="services__title">Frontend Developer</h3>
+                            <h3 class="services__title">Frontend Development</h3>
                         </div>
                         <span class="button button--flex button--small button--link services__button">
                             View More <i class="uil uil-arrow-right button__icon"></i>
                         </span>
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-title">Frontend Developer</h4>
+                                <h4 class="services__modal-title">Frontend Development</h4>
                                 <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="services__modal-services grid">
@@ -606,14 +609,14 @@
                      <div class="services__content">
                         <div>
                             <i class="uil uil-server services__icon"></i>
-                            <h3 class="services__title">Backend Developer</h3>
+                            <h3 class="services__title">Backend Development</h3>
                         </div>
                         <span class="button button--flex button--small button--link services__button">
                             View More <i class="uil uil-arrow-right button__icon"></i>
                         </span>
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-title">Backend Developer</h4>
+                                <h4 class="services__modal-title">Backend Development</h4>
                                 <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="services__modal-services grid">
@@ -650,10 +653,10 @@
                 <div class="portfolio__container container">
                     <div>
                         <!--======= Project 1 ========-->
-                        <div class="portfolio__content grid">
-                            <img src="assets/img/groovehits.jpg" alt="Groove Hits" class="portfolio__img">
+                        <div class="portfolio__content grid port1">
+                            <img src="assets/img/groovehits.jpg" alt="Groove Hits" class="portfolio__img portImg-1">
 
-                            <div class="portfolio__data">
+                            <div class="portfolio__data ">
                                 <h3 class="portfolio__title">Music Web App - Groove Hits</h3>
                                 <P class="portfolio__description">
                                     Groove Hits is a music player web application project that is developed mainly using JavaScript and Firebase as the backend service. 
@@ -670,10 +673,10 @@
                         </div>
 
                         <!--======= Project 2 ========-->
-                        <div class="portfolio__content grid">
-                            <img src="assets/img/wolarts.jpg" alt="Wol Arts" class="portfolio__img">
+                        <div class="portfolio__content grid portfolio2">
+                            <img src="assets/img/wolarts.jpg" alt="Wol Arts" class="portfolio__img portImg-2">
 
-                            <div class="portfolio__data">
+                            <div class="portfolio__data port2">
                                 <h3 class="portfolio__title">E-Commerce - Wol Arts</h3>
                                 <P class="portfolio__description">
                                     An E-commerce project built using django framework and contains all the essentials for viewing products, 
@@ -690,9 +693,9 @@
 
                         <!--======= Project 2 ========-->
                         <div class="portfolio__content grid">
-                            <img src="assets/img/branddesign.webp" alt="Wol Arts" class="portfolio__img">
+                            <img src="assets/img/branddesign.webp" alt="Wol Arts" class="portfolio__img portImg-3">
 
-                            <div class="portfolio__data">
+                            <div class="portfolio__data port3">
                                 <h3 class="portfolio__title">Brand Design</h3>
                                 <P class="portfolio__description">
                                     Brand and product packaging design for Moirani Beauty.
@@ -715,24 +718,23 @@
                     <div class="container">
                         <span class="section__subtitle project-message">Got a new project in mind? Feel free to reach out and let's build something awesome!</span>
                     </div>
-
-                    <div class="contact__container container grid">
-                        <div>
+                    <div class="absolute_holder">
+                    <div class="contact__container container">
+                        
                             <div class="contact__info">
-                                <i class="uil uil-phone contact__icon"></i>
-                                <div>
-                                    <h3 class="contact__title">Call Me</h3>
-                                    <span class="contact__subtitle">+254 707 705 021</span>
-                                </div>
+                                <a href="tel:+254707705021" class="contact__title contact__link">
+                                    <i class="uil uil-phone contact__icon"></i>
+                                    Click to Call
+                                </a>
                             </div>
 
                             <div class="contact__info">
-                                <i class="uil uil-envelope contact__icon"></i>
-                                <div>
-                                    <h3 class="contact__title">Email</h3>
-                                    <span class="contact__subtitle">alexmainakimani@gmail.com</span>
-                                </div>
+                                <a href="mailto:alexmainakimani@gmail.com" class="contact__title contact__link">
+                                    <i class="uil uil-envelope contact__icon"></i>
+                                    Send an Email
+                                </a>
                             </div>
+                            
 
                             <div class="contact__info">
                                 <i class="uil uil-map-marker contact__icon"></i>
@@ -741,9 +743,17 @@
                                     <span class="contact__subtitle">Nairobi, Kenya</span>
                                 </div>
                             </div>
-                        </div>
                     </div>
+                </div>
             </section>
+
+            <!---------------whatsapp floating icon------------->
+            <div class="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=+254707705021&text=Hey Maina!" target="_blank">
+                    <img src="assets/img/whatsapp.png" alt="" class="whatsapp_icon">
+                </a>
+            </div>
+
         </main>
 
         <!--==================== FOOTER ====================-->
@@ -768,11 +778,32 @@
         
         <!--==================== SCROLL TOP ====================-->
         
-
+        
         <!--==================== SWIPER JS ====================-->
         <script src=""></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+
+
+
+
+        <!-- Whatsapp - GetButton.io widget 
+        <script type="text/javascript">
+            (function () {
+                var options = {
+                    whatsapp: "+254707705021", // WhatsApp number
+                    call_to_action: "", // Call to action
+                    button_color: "#FF6550", // Color of button
+                    position: "right", // Position may be 'right' or 'left'
+                };
+                var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+        </script>
+         /GetButton.io widget -->
+
     </body>
 </html>
