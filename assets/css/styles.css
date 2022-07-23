@@ -240,7 +240,6 @@ img {
 /* show menu */
 .show-menu {
   bottom: 0;
-  
 }
 
 /* Active link */
@@ -280,7 +279,7 @@ img {
 
 .home__blob{
   position: absolute;
-  right: 5%;
+  right: 10%;
   top: 5%;
   width:200px;
   fill: var(--first-color);
@@ -561,7 +560,7 @@ margin-bottom: 30px;
   transform: translate(6px, -7px);
 }
 .qualification [data-content]{
-  display: none;
+  display: none; 
 }
 .qualification__active[data-content]{
   display: block;
@@ -605,7 +604,8 @@ margin-bottom: 30px;
   margin-bottom: var(--mb-1);
 }
 .services__title{
-  font-size: var(--h3-font-size);
+  font-size: var(--h4-font-size);
+  margin-right: 12px;
   margin-bottom: var(--mb-1);
   font-weight: var(--first-medium);
 }
@@ -701,22 +701,32 @@ margin-bottom: 30px;
 /*==================== CONTACT ME ====================*/
 .project-message{
   text-align: center;
-  padding: 15px 10% 20px 10%;
+  padding: 0.5rem 20%;
+}
+.absolute_holder{
+  position: relative;
+  display: grid;
 }
 .contact__container{
-  row-gap: 3rem;
+  row-gap: 1rem;
+  max-width: 10rem;
+  justify-self: center;
 }
 .contact__info{
   display: flex;
-  margin-bottom: var(--mb-2);
+  margin-bottom: 2rem;
+  justify-items: center;
+}
+.contact__link:hover{
+  color: var(--first-color);
 }
 .contact__icon{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--first-color);
   margin-right: var(--mb-0-75);
 }
 .contact__title{
-  font-size: var(--h3-font-size);
+  font-size: 1rem;
   font-weight: var(--font-medium);
   color: rgba(0,0,0,.5);
 }
@@ -738,6 +748,26 @@ margin-bottom: 30px;
 .footer-icon{
   margin-right: 20px;
 }
+
+/*========== whatsapp ==========*/
+.whatsapp{
+  position: fixed;
+  right: -1rem;
+  bottom: 1.5rem;
+  width: 6rem;
+  height: 6rem;
+  opacity: 0.5;
+}
+.whatsapp_icon{
+  width:100%;
+}
+.whatsapp:hover{
+  width: 6rem;
+  height: 6rem;
+  opacity: 0.8;
+  transition: linear 0.2s;
+}
+
 /*========== SCROLL UP ==========*/
 
 
@@ -752,6 +782,171 @@ margin-bottom: 30px;
 
 
 /* For medium devices */
+@media screen and (min-width: 568px) {
+  .home__content{
+    grid-template-columns: max-content 1fr 1fr;
+  }
+  .home__data{
+    grid-column: initial;
+  }
+  .home__blob{
+    position: relative;
+  }
+  .home__img{
+    order: 1;
+    justify-self: center;
+  }
+  .about__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .CTA-about{
+    align-self: center;
+  }
+  .about__data{
+    order: 2;
+  }
+  .skills{
+    margin: 0 10%;
+  }
+  .qualification__sections{
+    display: grid;
+    grid-template-columns: .6fr;
+    justify-content: center; 
+  }
+  .portfolio__content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .port2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .portfolio2{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 4rem;
+    border-radius: .8rem;
+    background-color: hsla(0, 0%, 97%, 0.5);
+  }
+  .whatsapp{
+    right: -0.8 rem;
+    bottom: 1.7rem;
+  }
+  .whatsapp:hover{
+    width: 9rem;
+    height: 9rem;
+    opacity: 0.8;
+    transition: linear 0.2s;
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body{
+    margin: 0;
+  }
+.section{
+  padding: 5rem 0 2rem;
+}
+.section__subtitle{
+  margin-bottom: 4rem;
+}
+.header{
+  top: 0;
+  bottom: initial;
+}
+.header, .main, .footer__container{
+  padding: 0 1rem;
+}
+.nav{
+  height: 3.5rem;
+  column-gap: 1rem;
+}
+.nav__icon, .nav__close, .nav__toggle{
+  display: none;
+}
+.nav__list{
+  display: flex;
+  column-gap: 2rem;
+}
+.nav__menu{
+  margin-left: auto;
+}
+.home__container{
+  row-gap: 5rem;
+}
+.home__content{
+  padding-top: 5.5rem;
+  column-gap: 2rem;
+}
+.home__blob{
+  width: 270px;
+}
+.about__container{
+  column-gap: 5rem;
+}
+.about__description{
+  text-align: initial;
+}
+.qualification__tabs{
+  justify-content: center;
+}
+.qualification__button{
+  margin: 0 var(--mb-1);
+}
+.qualification__sections{
+  grid-template-columns: .5fr;
+}
+.services__container{
+  grid-template-columns: repeat(3, 218px);
+  justify-content: center;
+}
+.services__icon{
+  font-size: 2rem;
+}
+.services__content{
+  padding: 4rem 0 2rem 1.5rem;
+}
+.whatsapp{
+  right: -0.8 rem;
+  bottom: 0;
+}
+.footer{
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+  padding-bottom: 1rem;
+}
+.portfolio__content{
+  column-gap: 0.5rem;
+}
+}
 
 
 /* For large devices */
+@media screen and (min-width: 1024px) {
+.header, .main, .footer__container{
+  padding: 0;
+}
+.home__content{
+ padding-top: 30px !important;
+}
+.home__blob{
+  width:280px;
+  transform: translateX(3rem);
+}
+.home__social{
+  transform: translateX(-6rem);
+}
+.services__container{
+  grid-template-columns: repeat(3, 238px);
+}
+.portfolio__content{
+  column-gap: 0.5rem;
+}
+}
